@@ -1,6 +1,4 @@
-/* =========================================
-   1. GLOBAL RESET & BASE STYLES
-   ========================================= */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,58 +6,50 @@
 }
 
 body {
-  /* A clean, modern font stack */
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  background-color: #0f172a; /* Deep slate dark background */
-  color: #e2e8f0; /* Soft light gray text so it isn't harsh on the eyes */
+  background-color: #0f172a; 
+  color: #e2e8f0; 
   line-height: 1.6;
 }
 
-/* =========================================
-   2. NAVIGATION BAR
-   ========================================= */
+/* NAVIGATION BAR */
 nav {
   background-color: #1e293b;
   padding: 1.2rem;
-  position: sticky; /* Makes the nav bar stick to the top when you scroll */
+  position: sticky; 
   top: 0;
   display: flex;
   justify-content: center;
-  gap: 2rem; /* Spacing between links */
+  gap: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
 
 nav a {
-  color: #38bdf8; /* Light sky blue */
+  color: #38bdf8; 
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #bae6fd; /* Lighter blue on hover */
+  color: #bae6fd; 
 }
 
-/* =========================================
-   3. MAIN SECTIONS & LAYOUT
-   ========================================= */
+/* MAIN SECTIONS & LAYOUT */
 section {
-  width: 90%; /* Automatically takes up exactly 90% of ANY screen */
-  max-width: 1400px; /* A safety limit so it doesn't stretch 10 feet wide on a giant TV */
+  width: 90%; 
+  max-width: 1400px; 
   margin: 0 auto; 
-  padding: 5rem 0; /* Changed side padding to 0 since the 90% width handles the spacing */
+  padding: 5rem 0; 
   border-bottom: 1px solid #334155; 
 }
 
-/* Removes the divider line from the very last section */
 section:last-of-type {
   border-bottom: none; 
 }
 
-/* =========================================
-   4. TYPOGRAPHY (Headings & Text)
-   ========================================= */
+/* TYPOGRAPHY (Headings & Text) */
 h1 {
   font-size: 2.8rem;
   margin-bottom: 0.5rem;
@@ -76,7 +66,7 @@ h2 {
 h3 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #38bdf8; /* Accent color for section titles */
+  color: #38bdf8; 
 }
 
 h4 {
@@ -89,13 +79,8 @@ p {
   margin-bottom: 0.8rem;
 }
 
-/* =========================================
-   5. CARDS (Projects, Education, etc.)
-   ========================================= */
-/* =========================================
-   5. CARDS (Projects, Education, etc.)
-   ========================================= */
-/* Only target actual item cards, not layout wrappers */
+/* CARDS (Projects, Education, etc.) */
+
 .card-grid div {
   background-color: #1e293b;
   padding: 1.5rem;
@@ -109,15 +94,12 @@ p {
   border-color: #38bdf8;
 }
 
-/* Makes the cards "lift up" when you hover over them */
 section div:hover {
   transform: translateY(-4px);
   border-color: #38bdf8;
 }
 
-/* =========================================
-   6. CONTACT FORM
-   ========================================= */
+/* CONTACT FORM */
 form {
   background-color: #1e293b;
   padding: 2rem !important;
@@ -143,7 +125,6 @@ input, textarea {
   margin-bottom: 1.2rem !important;
 }
 
-/* Glow effect when typing */
 input:focus, textarea:focus {
   outline: none;
   border-color: #38bdf8;
@@ -184,12 +165,11 @@ section a:hover {
   text-decoration: underline; 
 }
 
-/* =========================================
-   8. CONTACT SECTION LAYOUT
-   ========================================= */
+  /* CONTACT SECTION LAYOUT */
+
 .contact-container {
   display: flex;
-  flex-direction: column; /* Stacks on mobile phones */
+  flex-direction: column; 
   gap: 3rem; 
   align-items: flex-start;
   width: 100%;
@@ -205,10 +185,9 @@ section a:hover {
   width: 100%;
 }
 
-/* Forces side-by-side layout on screens wider than 768px */
 @media (min-width: 768px) {
   .contact-container {
-    flex-direction: row; /* Side-by-side */
+    flex-direction: row; 
     justify-content: space-between;
     align-items: flex-start;
   }

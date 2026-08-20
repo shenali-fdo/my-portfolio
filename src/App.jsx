@@ -10,7 +10,7 @@ function App(){
   useEffect(() => {
     AOS.init({
       duration: 1000, // How long the animation takes (1000ms = 1 second)
-      once: false,    // Set to true if you only want it to animate the first time you scroll down
+      once: false,    
     });
   }, []);
 
@@ -82,7 +82,8 @@ function App(){
           {portfolioData.certifications.map((cert, index) => (
             <div key={index} data-aos="zoom-in">
               <h4>{cert.title}</h4>
-              <p>{cert.institution} ({cert.year})</p>
+              <p>{cert.issuer} </p>
+              <p>({cert.year})</p>
             </div>
           ))}
         </div>
@@ -135,8 +136,8 @@ function App(){
         <div className="card-grid">
         {portfolioData.experience.map((exp, index) => (
           <div key={index} data-aos="zoom-in">
-            <h4>{exp.position}</h4>
-            <p>{exp.company} ({exp.duration})</p>
+            <h4>{exp.role}</h4>
+            <p>{exp.organization} ({exp.duration})</p>
             <p>{exp.description}</p>
           </div>
         ))}
