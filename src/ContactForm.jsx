@@ -24,7 +24,12 @@ function ContactForm() {
   };
 
     return (
-    <form ref={form} onSubmit={sendEmail} style={{ display: 'flex', flexDirection: 'column', maxWidth: '400px' }}>
+        <form ref={form} onSubmit={sendEmail} style={{ display: 'flex', flexDirection: 'column', width: '100%', margin: '0'}}>        
+        
+        <h4 style={{ textAlign: 'center', marginBottom: '20px', color: '#38bdf8' }}>
+        Send Me a Message
+        </h4>
+        
         <label>Name</label>
         <input type="text" name="name" required />
 

@@ -1,12 +1,12 @@
 {
-  "name": "Enter your name",
+  "name": "M. Shenali Fernando",
   "role": "Information Technology Undergraduate | AI Specialization",
   "bio": "Motivated Information Technology undergraduate specializing in Artificial Intelligence with a strong foundation in software development, data analysis, and problem-solving. Experienced in academic and organizational projects involving web development, databases, and AI/ML model implementation.",
   "contact": {
-    "email": "shenalifernando@gmail.com",
-    "phone": "+94 77 000 0000",
+    "email": "shenalifernando541@gmail.com",
+    "phone": "+94 76 007 7247",
     "location": "Sri Lanka",
-    "github": "https://github.com/IT2410106",
+    "github": "https://github.com/shenali-fdo",
     "linkedin": "https://www.linkedin.com/in/shenalifernando-998774376",
     "cv": "/shenali-cv.pdf"
   },
@@ -42,7 +42,7 @@
       "degree": "GCE Advanced Level / Ordinary Level",
       "year": "2014 - 2023",
       "gpa": "",
-      "description": "Secured 9A's in GCE O/L & served as a prefect"
+      "description": "Served as a prefect & Actively participated in extracurricular activities (College basketball team & swimming team), and achieved high academic performance in both A/L and O/L examinations."
     }
   ],
   "certifications": [
@@ -103,48 +103,60 @@
   ],
   "leadership": [
     {
-      "role": "OGV Sales & Expansion Development Team",
+      "role": "Designing & Editorial Team Member",
+      "organization": "SLIIT Mozilla Club",
+      "description": "Designed promotional materials & contributed to SLIIT Mozilla monthly blog.",
+      "image": "./src/assets/mozilla.png"
+    },
+    {
+      "role": "OGV Sales Team",
       "organization": "AIESEC",
-      "description": "Contributed to outreach, partnership communication, and expansion initiatives in performance-driven team environments."
-    },
-    {
-      "role": "Organizing Committee Member",
-      "organization": "IEEE IAS SBC of SLIIT",
-      "description": "Worked on the Lead Spring 25 & Path to Internship 26 events."
-    },
-    {
-      "role": "Designing & Editorial Team",
-      "organization": "Mozilla Club",
-      "description": "Designed promotional materials & contributed to SLIIT Mozilla monthly blog."
+      "description": "Contributed to outreach, partnership communication, and expansion initiatives in performance-driven team environments.",
+      "image": "./src/assets/ogv.jpeg"
     },
     {
       "role": "Editorial Volunteer",
       "organization": "Women in FOSS",
-      "description": "Assisted in content creation and documentation & monthly article publication."
+      "description": "Assisted in content creation and documentation & monthly article publication.",
+      "image": "./src/assets/wif.png"
+    },
+    {
+      "role": "Organizing Committee Member",
+      "organization": "IEEE IAS SBC of SLIIT",
+      "description": "Worked on the Lead Spring 25 & Path to Internship 26 events.",
+      "image": "./src/assets/pti.jpeg"
+    },
+    {
+      "role": "Organizing Committee Member",
+      "organization": "AIESEC in SLIIT",
+      "description": "Worked in the Events team in Global Village 5.0 held in 2026.",
+      "image": "./src/assets/gv5.jpeg"
+    },
+    {
+      "role": "Organizing Committee Member",
+      "organization": "SLIIT Women in FOSS",
+      "description": "Worked on ImpactX held in 2026 to promote women in technology and open-source software organized to celebrate womens' day.",
+      "image": "./src/assets/impactx.jpeg"
     }
   ],
   "achievements": [
     {
-      "title": "SLIIT Hackathon 2025",
-      "description": "Secured 1st place in the SLIIT Hackathon 2025 for developing an innovative solution to a real-world problem."
+      "title": "SLIIT Minihackathon 2026 organized by the MS Club",
+      "description": "Selected into the final round for top 10 teams in the SLIIT Minihackathon 2026 for developing an innovative solution to a real-world problem.(Team ByteForce)",
+      "image": "./src/assets/minihack.jpeg"
     },
     {
-      "title": "Best Project Award - AI/ML Personality Classification Model",
-      "description": "Received recognition for outstanding project work in AI/ML model development and implementation."
+      "title": "Dean's list Awards",
+      "description": "Received recognition for outstanding academics in first year & second year for twice.",
+      "image": "./src/assets/deanslist.jpeg"
     }
   ],
   "experience": [
     {
-      "role": "Software Development Intern",
-      "organization": "Tech Solutions Pvt Ltd",
+      "role": "Database Management Intern",
+      "organization": "ABC Lanka Pvt Ltd",
       "duration": "June 2025 - August 2025",
-      "description": "Worked on developing and testing web applications, collaborating with cross-functional teams, and implementing new features based on client requirements."
-    },
-    {
-      "role": "Research Assistant",
-      "organization": "SLIIT AI Lab",
-      "duration": "January 2025 - May 2025",
-      "description": "Assisted in research projects related to machine learning algorithms, data preprocessing, and model evaluation."
+      "description": "Worked on database design, maintenance, and implementing new features based on client requirements."
     }
   ]
 }

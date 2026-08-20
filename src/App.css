@@ -1,0 +1,215 @@
+/* =========================================
+   1. GLOBAL RESET & BASE STYLES
+   ========================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* A clean, modern font stack */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #0f172a; /* Deep slate dark background */
+  color: #e2e8f0; /* Soft light gray text so it isn't harsh on the eyes */
+  line-height: 1.6;
+}
+
+/* =========================================
+   2. NAVIGATION BAR
+   ========================================= */
+nav {
+  background-color: #1e293b;
+  padding: 1.2rem;
+  position: sticky; /* Makes the nav bar stick to the top when you scroll */
+  top: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Spacing between links */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+nav a {
+  color: #38bdf8; /* Light sky blue */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #bae6fd; /* Lighter blue on hover */
+}
+
+/* =========================================
+   3. MAIN SECTIONS & LAYOUT
+   ========================================= */
+section {
+  width: 90%; /* Automatically takes up exactly 90% of ANY screen */
+  max-width: 1400px; /* A safety limit so it doesn't stretch 10 feet wide on a giant TV */
+  margin: 0 auto; 
+  padding: 5rem 0; /* Changed side padding to 0 since the 90% width handles the spacing */
+  border-bottom: 1px solid #334155; 
+}
+
+/* Removes the divider line from the very last section */
+section:last-of-type {
+  border-bottom: none; 
+}
+
+/* =========================================
+   4. TYPOGRAPHY (Headings & Text)
+   ========================================= */
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: #f8fafc;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #38bdf8; /* Accent color for section titles */
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 0.8rem;
+}
+
+/* =========================================
+   5. CARDS (Projects, Education, etc.)
+   ========================================= */
+/* =========================================
+   5. CARDS (Projects, Education, etc.)
+   ========================================= */
+/* Only target actual item cards, not layout wrappers */
+.card-grid div {
+  background-color: #1e293b;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card-grid div:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+}
+
+/* Makes the cards "lift up" when you hover over them */
+section div:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+}
+
+/* =========================================
+   6. CONTACT FORM
+   ========================================= */
+form {
+  background-color: #1e293b;
+  padding: 2rem !important;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  width: 100%;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #e2e8f0;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: 1px solid #475569;
+  background-color: #0f172a;
+  color: #f8fafc;
+  font-family: inherit;
+  margin-bottom: 1.2rem !important;
+}
+
+/* Glow effect when typing */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+}
+
+button {
+  background-color: #38bdf8;
+  color: #0f172a; /* Dark text on light button */
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0ea5e9;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+section a {
+  color: #38bdf8; 
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+section a:hover {
+  color: #bae6fd; 
+  text-decoration: underline; 
+}
+
+/* =========================================
+   8. CONTACT SECTION LAYOUT
+   ========================================= */
+.contact-container {
+  display: flex;
+  flex-direction: column; /* Stacks on mobile phones */
+  gap: 3rem; 
+  align-items: flex-start;
+  width: 100%;
+}
+
+.contact-info {
+  flex: 1;
+  width: 100%;
+}
+
+.contact-form-wrapper {
+  flex: 1;
+  width: 100%;
+}
+
+/* Forces side-by-side layout on screens wider than 768px */
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row; /* Side-by-side */
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
