@@ -1,0 +1,150 @@
+{
+  "name": "Enter your name",
+  "role": "Information Technology Undergraduate | AI Specialization",
+  "bio": "Motivated Information Technology undergraduate specializing in Artificial Intelligence with a strong foundation in software development, data analysis, and problem-solving. Experienced in academic and organizational projects involving web development, databases, and AI/ML model implementation.",
+  "contact": {
+    "email": "shenalifernando@gmail.com",
+    "phone": "+94 77 000 0000",
+    "location": "Sri Lanka",
+    "github": "https://github.com/IT2410106",
+    "linkedin": "https://www.linkedin.com/in/shenalifernando-998774376",
+    "cv": "/shenali-cv.pdf"
+  },
+  "languages": ["English (Professional)", "Sinhala (Native)", "Tamil (Elementary)"],
+  "techStack": [
+    {
+      "category": "Programming Languages",
+      "skills": ["Python", "Java", "JavaScript", "SQL"]
+    },
+    {
+      "category": "Frameworks & Web",
+      "skills": ["React", "Node.js", "Express.js", "MongoDB", "Spring Boot", "HTML", "CSS"]
+    },
+    {
+      "category": "Tools & Platforms",
+      "skills": ["Git", "Postman", "Canva", "Figma"]
+    },
+    {
+      "category": "Core Concepts",
+      "skills": ["OOP", "Data Structures", "Database Design", "REST APIs"]
+    }
+  ],
+  "education": [
+    {
+      "school": "SLIIT, Malabe",
+      "degree": "BSc (Hons) in Information Technology specialization in Artificial Intelligence",
+      "year": "2024 - 2028",
+      "gpa": "3.54",
+      "description": "Strong academic foundation in programming, software engineering, databases, networking, and statistics & applied AI/ML techniques."
+    },
+    {
+      "school": "De Mazenod College, Kandana",
+      "degree": "GCE Advanced Level / Ordinary Level",
+      "year": "2014 - 2023",
+      "gpa": "",
+      "description": "Secured 9A's in GCE O/L & served as a prefect"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Professional Certificate in Marketing (PCM)",
+      "issuer": "Sri Lanka Institute of Marketing (SLIM)",
+      "year": "2020 - 2021"
+    },
+    {
+      "title": "Postman API Fundamentals Student Expert",
+      "issuer": "Postman",
+      "year": "2025"
+    },
+    {
+      "title": "Programming in Python",
+      "issuer": "University of Moratuwa",
+      "year": "2025"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Medical Clinic Management Web Application",
+      "status": "Completed",
+      "techStack": "MongoDB, Express, React, Node",
+      "description": "Used MERN stack to develop the medical management system with database connectivity and user authentication.",
+      "link": "https://github.com/yourusername/project1"
+    },
+    {
+      "title": "AI/ML Personality Classification Model",
+      "status": "Completed",
+      "techStack": "Python, Machine Learning",
+      "description": "Conducted data preprocessing and feature engineering & trained and evaluated supervised learning models to classify introvert/extrovert personalities.",
+      "link": "https://github.com/yourusername/project1"
+
+    },
+    {
+      "title": "Arduino-Based Home Automation System",
+      "status": "Completed",
+      "techStack": "Arduino, Embedded C",
+      "description": "Developed a microcontroller-based automation system integrating sensors and device control for real-time functionality.",
+      "link": "https://github.com/yourusername/project1"
+    },
+    {
+      "title": "Wedding Planning Management Web App",
+      "status": "Completed",
+      "techStack": "Java, SQL",
+      "description": "Built a dynamic web application using OOP principles & integrated backend logic with database connectivity.",
+      "link": "https://github.com/yourusername/project1"      
+    },
+    {
+      "title": "Database-Driven Tourist Management System",
+      "status": "In Progress",
+      "techStack": "SQL, Relational Databases",
+      "description": "Designed normalized relational database schema & implemented CRUD operations and optimized SQL queries.",
+      "link": "https://github.com/yourusername/project1"
+
+    }
+  ],
+  "leadership": [
+    {
+      "role": "OGV Sales & Expansion Development Team",
+      "organization": "AIESEC",
+      "description": "Contributed to outreach, partnership communication, and expansion initiatives in performance-driven team environments."
+    },
+    {
+      "role": "Organizing Committee Member",
+      "organization": "IEEE IAS SBC of SLIIT",
+      "description": "Worked on the Lead Spring 25 & Path to Internship 26 events."
+    },
+    {
+      "role": "Designing & Editorial Team",
+      "organization": "Mozilla Club",
+      "description": "Designed promotional materials & contributed to SLIIT Mozilla monthly blog."
+    },
+    {
+      "role": "Editorial Volunteer",
+      "organization": "Women in FOSS",
+      "description": "Assisted in content creation and documentation & monthly article publication."
+    }
+  ],
+  "achievements": [
+    {
+      "title": "SLIIT Hackathon 2025",
+      "description": "Secured 1st place in the SLIIT Hackathon 2025 for developing an innovative solution to a real-world problem."
+    },
+    {
+      "title": "Best Project Award - AI/ML Personality Classification Model",
+      "description": "Received recognition for outstanding project work in AI/ML model development and implementation."
+    }
+  ],
+  "experience": [
+    {
+      "role": "Software Development Intern",
+      "organization": "Tech Solutions Pvt Ltd",
+      "duration": "June 2025 - August 2025",
+      "description": "Worked on developing and testing web applications, collaborating with cross-functional teams, and implementing new features based on client requirements."
+    },
+    {
+      "role": "Research Assistant",
+      "organization": "SLIIT AI Lab",
+      "duration": "January 2025 - May 2025",
+      "description": "Assisted in research projects related to machine learning algorithms, data preprocessing, and model evaluation."
+    }
+  ]
+}

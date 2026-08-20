@@ -1,122 +1,120 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import React from "react";
+import portfolioData from './data.json';
+import './App.css';
+import ContactForm from './ContactForm';
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
+function App(){
+  return(
+    <div>
+      {/* Navigation */}
+      <nav>
+        <a href="#about">About</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#education">Education & Certs</a> |
+        <a href="#leadership">Leadership</a> |
+        <a href="#achievements">Achievements</a> |
+        <a href="#experience">Experience</a> |
+        <a href="#contact">Contact</a>
+      </nav>
+      {/* Hero  / AboutSection */}
+      <section id="about">
+        <h1>{portfolioData.name}</h1>
+        <h2>{portfolioData.role}</h2>
+        <p>{portfolioData.bio}</p>
       </section>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
+      {/* Skills / Tech Stack Section */}
+      <section id="skills">
+        <h3>Technical Skills</h3>
+        {portfolioData.techStack.map((group, index) =>(
+          <div key={index}>
+            <strong>{group.category}</strong>
+            <span>{group.skills.join(', ')}</span>
+          </div>
+        ))}
+      </section>
+     
+      {/*Projects Section*/}
+      <section id="projects">
+        <h3>My Projects</h3>
+        {portfolioData.projects.map((project, index) => (
+          <div key={index}>
+            <h4>{project.title}</h4>
+            <p>{project.description}</p>
+            <p><strong>Status:</strong> {project.status}</p>
+            <p><strong>Tech:</strong> {project.techStack}</p>
+            <p><strong>Link:</strong> <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a></p>
+          </div>
+        ))}
       </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+      {/* Education & Certifications */}
+      <section id="education">
+        <h3>Education</h3>
+        {portfolioData.education.map((edu, index) => (
+          <div key={index}>
+            <h4>{edu.degree}</h4>
+            <p>{edu.school} ({edu.year})</p>
+            <p>{edu.description}</p>
+          </div>
+        ))}
+        
+        <h3>Certifications</h3>
+        {portfolioData.certifications.map((cert, index) => (
+          <div key={index}>
+            <p><strong>{cert.title}</strong> - {cert.issuer} ({cert.year})</p>
+          </div>
+        ))}
+      </section>
+
+      {/*Leadership and Organizations Section*/}
+      <section id = "leadership">
+        <h3>Organizational & Leadership Experience</h3>
+        {portfolioData.leadership.map((lead,index) => (
+          <div key={index}>
+            <h4>{lead.role}</h4>
+            <p>{lead.organization}</p>
+            <p>{lead.description}</p>
+          </div>
+        ))}
+      </section>
+
+      {/*Achievements Section*/}
+      <section id="achievements">
+        <h3>Achievements</h3>
+        {portfolioData.achievements.map((achievement, index) => (
+          <div key={index}>
+            <p><strong>{achievement.title}</strong> - {achievement.description}</p>
+          </div>
+        ))}
+      </section>
+
+      {/*Experience Section*/}
+      <section id="experience">
+        <h3>Professional Experience</h3>
+        {portfolioData.experience.map((exp, index) => (
+          <div key={index}>
+            <h4>{exp.position}</h4>
+            <p>{exp.company} ({exp.duration})</p>
+            <p>{exp.description}</p>
+          </div>
+        ))}
+      </section>
+
+      {/* Contact & Languages */}
+      <section id="contact">
+        <h3>Contact</h3>
+        <p><strong>Languages:</strong> {portfolioData.languages.join(', ')}</p>
+        <p>Email: {portfolioData.contact.email}</p>
+        <p>GitHub: <a href={portfolioData.contact.github}>{portfolioData.contact.github}</a></p>
+        <p>LinkedIn: <a href={portfolioData.contact.linkedin}>{portfolioData.contact.linkedin}</a></p>
+      
+        <ContactForm />
+      </section>   
+
+    </div>
+  );
 }
 
-export default App
+export default App;
