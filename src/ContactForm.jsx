@@ -34,7 +34,7 @@ function ContactForm() {
         <label>Name</label>
         <input type="text" name="name" required />
 
-        <label>Email</label>
+        <label>Your Email</label>
         <input type="email" name="email" required />
 
         <label>Message</label>
