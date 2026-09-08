@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import portfolioData from './data.json';
 import './App.css';
 import ContactForm from './ContactForm';
 import AOS from 'aos';
-import { useEffect } from 'react';
 import 'aos/dist/aos.css';
 
 function App(){
@@ -16,18 +15,26 @@ function App(){
 
   return(
     <div>
+      {/* Animated Background Shapes */}
+      <div className="background-shapes">
+        <div className="shape shape-1"></div>
+        <div className="shape shape-2"></div>
+        <div className="shape shape-3"></div>
+      </div>
+
       {/* Navigation */}
       <nav>
         <a href="#about">About</a>
+        <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
         <a href="#certifications">Certifications</a>        
         <a href="#leadership">Leadership</a>
         <a href="#achievements">Achievements</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
+      
       {/* Hero  / AboutSection */}
       <section id="about">
         <h1>{portfolioData.name}</h1>
@@ -59,7 +66,7 @@ function App(){
           </div>
         ))}
       </section>
-     
+      
       {/*Projects Section*/}
       <section id="projects">
         <h3>Projects</h3>
@@ -90,7 +97,7 @@ function App(){
       </section>
 
       {/*Leadership and Organizations Section*/}
-      <section id = "leadership">
+      <section id="leadership">
         <h3>Organizational & Leadership Experience</h3>
         <div className="card-grid">
         {portfolioData.leadership.map((lead,index) => (
@@ -143,7 +150,6 @@ function App(){
         ))}
         </div>
       </section>
-
 
       {/* Contact & Languages */}
       <section id="contact">
