@@ -107,49 +107,49 @@
       "role": "Designing & Editorial Team Member",
       "organization": "SLIIT Mozilla Club",
       "description": "Designed promotional materials & contributed to SLIIT Mozilla monthly blog.",
-      "image": "./src/assets/mozilla.png"
+      "image": "./mozilla.png"
     },
     {
       "role": "OGV Sales Team",
       "organization": "AIESEC",
       "description": "Contributed to outreach, partnership communication, and expansion initiatives in performance-driven team environments.",
-      "image": "./src/assets/ogv.jpeg"
+      "image": "./ogv.jpeg"
     },
     {
       "role": "Editorial Volunteer",
       "organization": "Women in FOSS",
       "description": "Assisted in content creation and documentation & monthly article publication.",
-      "image": "./src/assets/wif.png"
+      "image": "./wif.png"
     },
     {
       "role": "Organizing Committee Member",
       "organization": "IEEE IAS SBC of SLIIT",
       "description": "Worked on the Lead Spring 25 & Path to Internship 26 events.",
-      "image": "./src/assets/pti.jpeg"
+      "image": "./pti.jpeg"
     },
     {
       "role": "Organizing Committee Member",
       "organization": "AIESEC in SLIIT",
       "description": "Worked in the Events team in Global Village 5.0 held in 2026.",
-      "image": "./src/assets/gv5.jpeg"
+      "image": "./gv5.jpeg"
     },
     {
       "role": "Organizing Committee Member",
       "organization": "SLIIT Women in FOSS",
       "description": "Worked on ImpactX held in 2026 to promote women in technology and open-source software organized to celebrate womens' day.",
-      "image": "./src/assets/impactx.jpeg"
+      "image": "./impactx.jpeg"
     }
   ],
   "achievements": [
     {
       "title": "SLIIT Minihackathon 2026 organized by the MS Club",
       "description": "Selected into the final round for top 10 teams in the SLIIT Minihackathon 2026 for developing an innovative solution to a real-world problem.(Team ByteForce)",
-      "image": "./src/assets/minihack.jpeg"
+      "image": "./minihack.jpeg"
     },
     {
       "title": "Dean's list Awards",
       "description": "Received recognition for outstanding academics in first year & second year for twice.",
-      "image": "./src/assets/deanslist.jpeg"
+      "image": "./sdeanslist.jpeg"
     }
   ],
   "experience": [
